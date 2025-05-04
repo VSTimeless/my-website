@@ -1,0 +1,28 @@
+title: Volodymyr's Personal Website
+email: Shchuryshyn@protonmail.com
+description: >-
+  Engineering Student and Tech Enthusiast
+baseurl: "" 
+url: "https://vstimeless.github.io"
+github_username: vstimeless
+twitter_username: vstimeless
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - .gitignore

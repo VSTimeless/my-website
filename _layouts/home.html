@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="hero-section">
+  <h1>{{ site.title }}</h1>
+  <p class="tagline">Electrical Engineering Student | Tech Enthusiast</p>
+</div>
+
+<div class="home-content">
+  {{ content }}
+</div>
+
+<div class="contact-section">
+  <h2>Get in Touch</h2>
+  <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+  
+  <div class="social-links">
+    {% if site.github_username %}
+    <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+    {% endif %}
+    
+    {% if site.twitter_username %}
+    <a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>
+    {% endif %}
+  </div>
+</div>
