@@ -1,11 +1,12 @@
-title: Volodymyr's Personal Website
+title: Volodymyr
 email: Shchuryshyn@protonmail.com
 description: >-
-  Engineering Student and Tech Enthusiast
+  Electrical Engineering Student | Tech Enthusiast
 baseurl: "" 
 url: "https://vstimeless.github.io"
 github_username: vstimeless
 twitter_username: vstimeless
+linkedin_username: vstimeless
 
 # Build settings
 theme: minima

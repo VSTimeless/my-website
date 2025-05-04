@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blog | Volodymyr's Personal Website</title>
+  <title>Blog | Volodymyr</title>
   <link rel="stylesheet" href="assets/css/custom.css">
   <style>
     /* Additional inline styles to ensure preview works without Jekyll */
@@ -27,15 +27,37 @@
 <body>
   <header class="site-header">
     <div class="wrapper">
-      <a class="site-title" href="/">Volodymyr's Personal Website</a>
+      <a class="site-title" href="index.html">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zm-1-7.5a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm-4.5 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm9 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" fill="currentColor"/>
+        </svg>
+        Volodymyr
+      </a>
       
       <nav class="site-nav">
         <div class="trigger">
-          <a class="page-link" href="/">Home</a>
+          <a class="page-link" href="index.html">Home</a>
           <a class="page-link" href="projects.html">Projects</a>
           <a class="page-link" href="blog.html">Blog</a>
           <a class="page-link" href="about.html">About</a>
+          <a class="page-link" href="contact.html">Contact</a>
         </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <svg id="dark-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg id="light-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
       </nav>
     </div>
   </header>
@@ -52,21 +74,21 @@
             <h2>Why I Built a Home Electronics Lab</h2>
             <div class="blog-date">May 1, 2025</div>
             <p>As an electrical engineering student, I've always believed in the power of hands-on learning. While theoretical knowledge is essential, there's something magical about applying concepts in practice. That's why I decided to build my own electronics home lab.</p>
-            <p><a href="blog/why-i-built-a-home-lab.html">Read more</a></p>
+            <p><a href="#" class="read-more">Read more</a></p>
           </div>
           
           <div class="blog-post">
             <h2>My Favorite Photography Tips for Engineers</h2>
             <div class="blog-date">April 15, 2025</div>
             <p>Photography might seem like an artistic pursuit far removed from engineering, but I've found numerous parallels that make it a perfect complementary hobby for engineers like myself. The technical aspects of photography - aperture, shutter speed, ISO, and composition - appeal to the engineer's mind while providing a creative outlet.</p>
-            <p><a href="blog/photography-tips.html">Read more</a></p>
+            <p><a href="#" class="read-more">Read more</a></p>
           </div>
           
           <div class="blog-post">
             <h2>Books That Inspire My EE Studies</h2>
             <div class="blog-date">March 20, 2025</div>
             <p>As an electrical engineering student, I find that reading extends far beyond textbooks. The right books can provide inspiration, context, and a deeper appreciation for the field. Here are some books that have significantly influenced my engineering journey.</p>
-            <p><a href="blog/books-inspire-ee.html">Read more</a></p>
+            <p><a href="#" class="read-more">Read more</a></p>
           </div>
         </div>
       </article>
@@ -75,8 +97,68 @@
   
   <footer class="site-footer">
     <div class="wrapper">
-      <p>&copy; 2025 Volodymyr's Personal Website</p>
+      <div class="footer-content">
+        <div>
+          <p class="footer-name">Volodymyr</p>
+          <p class="footer-description">Electrical Engineering Student</p>
+        </div>
+        
+        <div class="social-links">
+          <a href="https://github.com/vstimeless" aria-label="GitHub">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" fill="currentColor"/>
+              <circle cx="4" cy="4" r="2" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="https://twitter.com/vstimeless" aria-label="Twitter">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/vstimeless" aria-label="LinkedIn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" fill="currentColor"/>
+              <circle cx="4" cy="4" r="2" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <p>&copy; 2025 Volodymyr. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    // Theme toggle functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    const lightIcon = document.getElementById('light-icon');
+    const darkIcon = document.getElementById('dark-icon');
+    
+    // Check for saved theme preference or use system preference
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const savedTheme = localStorage.getItem('theme');
+    
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      lightIcon.style.display = 'block';
+      darkIcon.style.display = 'none';
+    }
+    
+    // Toggle theme on button click
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      
+      if (newTheme === 'dark') {
+        lightIcon.style.display = 'block';
+        darkIcon.style.display = 'none';
+      } else {
+        lightIcon.style.display = 'none';
+        darkIcon.style.display = 'block';
+      }
+    });
+  </script>
 </body>
 </html>

@@ -6,11 +6,11 @@ permalink: /about/
 
 # About Me
 
-I'm Volodymyr, an Electrical Engineering student exploring the fascinating world of electronics, technology, and science.
+I'm Volodymyr, an Engineering student exploring the fascinating world of electronics, technology, and science.
 
 ## Education
 
-Currently pursuing a degree in Electrical Engineering at University, with a focus on circuit design and embedded systems.
+Currently pursuing a degree in Engineering at Capilano University, with a focus on circuit design and embedded systems.
 
 ## Interests
 

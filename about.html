@@ -1,85 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About | Volodymyr's Personal Website</title>
+  <title>About | Volodymyr</title>
   <link rel="stylesheet" href="assets/css/custom.css">
-  <style>
-    /* Additional inline styles to ensure preview works without Jekyll */
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-  </style>
 </head>
 <body>
   <header class="site-header">
     <div class="wrapper">
-      <a class="site-title" href="/">Volodymyr's Personal Website</a>
+      <a class="site-title" href="index.html">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zm-1-7.5a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm-4.5 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm9 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" fill="currentColor"/>
+        </svg>
+        Volodymyr
+      </a>
       
       <nav class="site-nav">
         <div class="trigger">
-          <a class="page-link" href="/">Home</a>
+          <a class="page-link" href="index.html">Home</a>
           <a class="page-link" href="projects.html">Projects</a>
           <a class="page-link" href="blog.html">Blog</a>
           <a class="page-link" href="about.html">About</a>
+          <a class="page-link" href="contact.html">Contact</a>
         </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <svg id="dark-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg id="light-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
       </nav>
     </div>
   </header>
   
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
-      <article class="post">
-        <header class="post-header">
-          <h1 class="post-title">About</h1>
-        </header>
-
-        <div class="post-content">
-          <h2>About Me</h2>
-
-          <p>I'm Volodymyr, an Engineering student exploring the fascinating world of electronics, technology, and science.</p>
-
-          <h3>Education</h3>
-
-          <p>Currently pursuing a degree in Engineering at Capilano University, with a focus on circuit design and embedded systems.</p>
-
-          <h3>Interests</h3>
-          
-          <ul>
-            <li><strong>Home Lab</strong>: Building and experimenting with circuits and electronic projects.</li>
-            <li><strong>Books</strong>: Passionate about reading books on technology, science, and engineering.</li>
-            <li><strong>Podcasts</strong>: Regular listener of tech podcasts that keep me updated with the latest trends.</li>
-            <li><strong>Fitness</strong>: Dedicated to maintaining a healthy lifestyle through regular gym workouts.</li>
-            <li><strong>Photography</strong>: Capturing moments and technical subjects through the lens.</li>
-          </ul>
-
-          <h3>Skills</h3>
-          
-          <ul>
-            <li>Circuit design and analysis</li>
-            <li>Embedded systems programming</li>
-            <li>PCB design</li>
-            <li>FPGA development</li>
-            <li>Programming languages: C, Python, VHDL</li>
-          </ul>
-
-          <h3>Goals</h3>
-          
-          <p>My goal is to combine my technical knowledge with practical applications to create innovative solutions to real-world problems. I'm particularly interested in sustainable energy solutions and IoT applications.</p>
-
-          <p>Feel free to reach out if you'd like to connect or collaborate on interesting projects!</p>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>About Me</h1>
+          <p class="tagline">Electrical Engineering Student exploring technology and science</p>
         </div>
-      </article>
+      </section>
+
+      <section class="about-section">
+        <p>I'm Volodymyr, an Electrical Engineering student exploring the fascinating world of electronics, technology, and science.</p>
+
+        <h2 class="section-title">Education</h2>
+        <p>Currently pursuing a degree in Engineering at Capilano University, with a focus on circuit design and embedded systems.</p>
+
+        <h2 class="section-title">Interests</h2>
+        <div class="interests-grid">
+          <div class="interest-card">
+            <div class="interest-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 3a1 1 0 012 0v2a1 1 0 11-2 0V3zM9 9a1 1 0 012 0v2a1 1 0 11-2 0V9zM9 15a1 1 0 012 0v2a1 1 0 11-2 0v-2zM5 5a1 1 0 000 2h2a1 1 0 000-2H5zM5 11a1 1 0 100 2h2a1 1 0 100-2H5zM5 17a1 1 0 100 2h2a1 1 0 100-2H5zM19 5a1 1 0 00-2 0v2a1 1 0 102 0V5zM19 11a1 1 0 10-2 0v2a1 1 0 102 0v-2zM19 17a1 1 0 10-2 0v2a1 1 0 102 0v-2z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="interest-title">Home Lab</h3>
+            <p class="interest-description">Building and experimenting with circuits and electronic projects.</p>
+          </div>
+          
+          <div class="interest-card">
+            <div class="interest-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 2h12a2 2 0 012 2v16a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2zm0 2v16h12V4H6zm2 4h8v2H8V8zm0 4h8v2H8v-2zm0 4h5v2H8v-2z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="interest-title">Books</h3>
+            <p class="interest-description">Passionate about reading books on technology, science, and engineering.</p>
+          </div>
+          
+          <div class="interest-card">
+            <div class="interest-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 3a3 3 0 00-3 3v4a3 3 0 006 0V6a3 3 0 00-3-3zm1 11h-2a6.97 6.97 0 01-5 2H5v2h1a8.97 8.97 0 005 1.5c3.31 0 6-2.69 6-6h-4z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="interest-title">Podcasts</h3>
+            <p class="interest-description">Regular listener of tech podcasts that keep me updated with the latest trends.</p>
+          </div>
+          
+          <div class="interest-card">
+            <div class="interest-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.5 12a5.5 5.5 0 11-11 0 5.5 5.5 0 0111 0zm-1.51 3.53l1.58-1.58a7.5 7.5 0 10-1.73 1.73l-1.58 1.58 1.73 1.74z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="interest-title">Fitness</h3>
+            <p class="interest-description">Dedicated to maintaining a healthy lifestyle through regular gym workouts.</p>
+          </div>
+          
+          <div class="interest-card">
+            <div class="interest-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.828 5l-1.414 1.414L11.657 10H5v2h6.657l-3.243 3.586L9.828 17 15.828 11 9.828 5z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="interest-title">Photography</h3>
+            <p class="interest-description">Capturing moments and technical subjects through the lens.</p>
+          </div>
+        </div>
+
+        <h2 class="section-title">Skills</h2>
+        <ul>
+          <li>Circuit design and analysis</li>
+          <li>Embedded systems programming</li>
+          <li>PCB design</li>
+          <li>FPGA development</li>
+          <li>Programming languages: C, Python, VHDL</li>
+        </ul>
+
+        <h2 class="section-title">Goals</h2>
+        <p>My goal is to combine technical knowledge with practical applications to create innovative solutions to real-world problems. I'm particularly interested in sustainable energy solutions and IoT applications.</p>
+      </section>
     </div>
   </main>
   
   <footer class="site-footer">
     <div class="wrapper">
-      <p>&copy; 2025 Volodymyr's Personal Website</p>
+      <div class="footer-content">
+        <div>
+          <p class="footer-name">Volodymyr</p>
+          <p class="footer-description">Electrical Engineering Student</p>
+        </div>
+        
+        <div class="social-links">
+          <a href="https://github.com/vstimeless" aria-label="GitHub">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.477 2 2 6.463 2 11.97c0 4.404 2.865 8.14 6.839 9.458.5.092.682-.216.682-.48 0-.236-.008-.864-.013-1.695-2.782.602-3.369-1.337-3.369-1.337-.454-1.151-1.11-1.458-1.11-1.458-.908-.618.069-.606.069-.606 1.003.07 1.531 1.027 1.531 1.027.892 1.524 2.341 1.084 2.91.828.092-.643.35-1.083.636-1.332-2.22-.251-4.555-1.107-4.555-4.927 0-1.088.39-1.979 1.029-2.675-.103-.252-.446-1.266.098-2.638 0 0 .84-.268 2.75 1.022A9.606 9.606 0 0112 6.82c.85.004 1.705.114 2.504.336 1.909-1.29 2.747-1.022 2.747-1.022.546 1.372.202 2.386.1 2.638.64.696 1.028 1.587 1.028 2.675 0 3.83-2.339 4.673-4.566 4.92.359.307.678.915.678 1.846 0 1.332-.012 2.407-.012 2.734 0 .267.18.577.688.48C19.137 20.107 22 16.373 22 11.969 22 6.463 17.522 2 12 2z" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="https://twitter.com/vstimeless" aria-label="Twitter">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/vstimeless" aria-label="LinkedIn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" fill="currentColor"/>
+              <circle cx="4" cy="4" r="2" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <p>&copy; 2025 Volodymyr. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    // Theme toggle functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    const lightIcon = document.getElementById('light-icon');
+    const darkIcon = document.getElementById('dark-icon');
+    
+    // Check for saved theme preference or use system preference
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const savedTheme = localStorage.getItem('theme');
+    
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      lightIcon.style.display = 'block';
+      darkIcon.style.display = 'none';
+    }
+    
+    // Toggle theme on button click
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      
+      if (newTheme === 'dark') {
+        lightIcon.style.display = 'block';
+        darkIcon.style.display = 'none';
+      } else {
+        lightIcon.style.display = 'none';
+        darkIcon.style.display = 'block';
+      }
+    });
+  </script>
 </body>
 </html>

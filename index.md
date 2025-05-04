@@ -33,4 +33,4 @@ I'm a 3rd year EE student at University. I'm passionate about building circuits 
 
 ## Get in Touch
 
-[volodymyr@example.com](mailto:volodymyr@example.com)
+[Shchuryshyn@protonmail.com](mailto:Shchuryshyn@protonmail.com)

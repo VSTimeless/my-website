@@ -51,7 +51,7 @@ Customize the theme to create a structure that reflects Volodymyr’s identity a
     - List 3–5 latest posts with title, date, and 1-sentence excerpt.
     - Link to full Blog page.
   - **Contact Section**:
-    - Simple text: "Get in touch: [volodymyr@email.com](mailto:volodymyr@email.com)".
+    - Simple text: "Get in touch: [volodymyr@email.com](mailto:Shchuryshyn@protonmail.com)".
 - **Navigation**:
   - Edit `_includes/header.html` or theme’s navigation file.
   - Add links: Home (`/`), Projects (`/projects/`), Blog (`/blog/`), About (`/about/`).
