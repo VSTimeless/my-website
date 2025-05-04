@@ -2,6 +2,8 @@
 
 A personal website built with Jekyll showcasing projects, blog posts, and interests.
 
+> Formerly known as "Losing my sanity over developing semi-functional website by Vibe-coding..."
+
 ## Project Structure
 
 ```
